@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    "run": "deno run --allow-read --allow-write --allow-net main.ts"
+  },
+  "imports": { "zod": "npm:zod@^3.23.8" }
+}
