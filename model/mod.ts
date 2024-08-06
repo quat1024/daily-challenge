@@ -1,7 +1,7 @@
 import z from "zod";
 
-//TODO need to double check the non-std mods in the list (I found "RD")
-const modAcronyms = ["EZ" , "NF" , "HT" , "DC" , "HR" , "SD" , "PF" , "DT" , "NC" , "HD" , "FL" , "BL" , "ST" , "AC" , "TP" , "DA" , "CL" , "MR" , "AL" , "SG" , "RX" , "AP" , "SO" , "TR" , "WG" , "SI" , "GR" , "DF" , "WU" , "WD" , "TC" , "BR" , "AD" , "MU" , "NS" , "MG" , "RP" , "AS" , "FR" , "BU" , "SY" , "DP", "RD"] as const;
+//TODO need to double check this list
+const modAcronyms = ["EZ" , "NF" , "HT" , "DC" , "HR" , "SD" , "PF" , "DT" , "NC" , "HD" , "FL" , "BL" , "ST" , "AC" , "TP" , "DA" , "CL" , "MR" , "AL" , "SG" , "RX" , "AP" , "SO" , "TR" , "WG" , "SI" , "GR" , "DF" , "WU" , "WD" , "TC" , "BR" , "AD" , "MU" , "NS" , "MG" , "RP" , "AS" , "FR" , "BU" , "SY" , "DP", "RD", "SW", "CS"] as const;
 
 export const ZMod = z.enum(modAcronyms);
 export type Mod = z.infer<typeof ZMod>;
