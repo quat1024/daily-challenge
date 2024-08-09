@@ -33,7 +33,7 @@ export async function promptForOauthCode(app: OauthApp): Promise<OauthCode> {
   const scope = "public";
   const state = "" + Math.random();
 
-  const authUrl = "https://osu.ppy.sh/oauth/authorize?" + encUri({
+  const authUrl = "https://osu.ppy.sh/oauth/authorize" + encUri({
     client_id: app.client_id,
     redirect_uri: app.redirect_uri,
     response_type: responseType,
