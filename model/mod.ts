@@ -68,6 +68,7 @@ const modAcronyms = [
   "8K",
   "9K",
   "10K",
+  "NR", //huh
 ] as const;
 
 export const ZMod = z.enum(modAcronyms);
